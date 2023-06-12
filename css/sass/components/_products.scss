@@ -1,0 +1,87 @@
+//on portofolio.html//
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  list-style: none;
+  gap: 30px;
+  padding-left: 215px;
+}
+
+.products__card {
+  box-sizing: border-box;
+  width: 370px;
+  height: 404px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  position: relative;
+  overflow: hidden;
+}
+
+.products__item {
+  position: absolute;
+  height: 110px;
+  width: 370px;
+  background-color: #ffffff;
+  z-index: 3;
+}
+.products__item--title {
+  padding-bottom: 4px;
+  padding-left: 24px;
+  padding-top: 20px;
+  margin: 0%;
+  font-family: var(--text-font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: $dark;
+}
+
+.products__item--category {
+  font-family: var(--text-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: $light;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  margin: 0%;
+}
+
+.products__card:hover {
+  cursor: pointer;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.products__card:hover .products__overlay {
+  transform: translatey(0%);
+}
+.products__overlay {
+  top: 3px;
+  left: 0;
+  width: 370px;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.9);
+  overflow: hidden;
+  transform: translatey(100%);
+  transition: var(--transition);
+  position: absolute;
+}
+
+.products__overlay--text {
+  padding-top: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-family: var(--text-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}

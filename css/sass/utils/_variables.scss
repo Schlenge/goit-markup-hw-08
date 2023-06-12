@@ -1,0 +1,40 @@
+/*Variabile webstudio*/
+$dark: #212121;
+$light: #757575;
+$white: #fff;
+$accent-color: #2196f3;
+
+/* Responsive Breakpoints */
+$mobile-breakpoint: 481px;
+$tablet-breakpoint: 769px;
+$desktop-breakpoint: 1201px;
+
+:root {
+  --accent-color: #($accent-color);
+  --text-active: #($accent-color);
+  --link-color: #($dark-text);
+  --link-active-color: #($accent-color);
+  --text-font-family: "Roboto", sans-serif;
+  --logo-font-family: "Raleway", sans-serif;
+  --dark-text: #($dark);
+  --light-text: #($light);
+  --white-text: #($white);
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}

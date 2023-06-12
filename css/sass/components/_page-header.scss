@@ -1,0 +1,236 @@
+.page-header {
+  position: absolute;
+  width: 480px;
+  height: 60px;
+  background: #fff;
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  padding-left: 15px;
+  padding-top: 16px;
+}
+.page-header__link {
+  font-family: var(--text-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover,
+  :active {
+    color: $accent-color;
+  }
+}
+@media (max-width: 769px) {
+  .page-header__nav,
+  .email-tel {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) and (max-width: 1199px) {
+  .page-header {
+    width: 768px;
+    height: 80px;
+    display: flex;
+  }
+  .logo {
+    padding-left: 15px;
+    padding-top: 26px;
+  }
+  .page-header__nav {
+    display: flex;
+    gap: 50px;
+    padding-top: 32px;
+    padding-left: 93px;
+  }
+  .page-header__nav--1::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    border-radius: 2px;
+    background: $accent-color;
+    display: none;
+    top: 76px;
+    width: 42px;
+    left: 226px;
+  }
+
+  .page-header__nav--2::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    border-radius: 2px;
+    background: $accent-color;
+    display: none;
+    top: 76px;
+    width: 66px;
+    left: 318px;
+  }
+
+  .page-header__nav--3::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    border-radius: 2px;
+    background: $accent-color;
+    display: none;
+    top: 76px;
+    width: 53px;
+    left: 433px;
+  }
+  .page-header__nav--1:hover::after,
+  .page-header__nav--2:hover::after,
+  .page-header__nav--3:hover::after,
+  .page-header__nav--1:focus::after,
+  .page-header__nav--2:focus::after,
+  .page-header__nav--3:focus::after {
+    display: inline;
+  }
+  .email-tel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 21px;
+    padding-left: 114px;
+  }
+
+  .email-tel__contacts {
+    padding-left: 8px;
+    font-family: var(--text-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    &:hover {
+      color: #2196f3;
+      cursor: pointer;
+    }
+  }
+
+  .email-tel__icon {
+    width: 16px;
+    height: 16px;
+    color: currentColor;
+  }
+
+  .email-tel__email,
+  .email-tel__tel {
+    display: flex;
+    align-items: center;
+    color: #757575;
+    &:hover {
+      color: #2196f3;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .page-header {
+    width: 1600px;
+    height: 80px;
+    display: flex;
+    align-items: baseline;
+  }
+  .logo {
+    padding-top: 24px;
+    padding-left: 215px;
+  }
+  .page-header__nav {
+    display: flex;
+    gap: 50px;
+    padding-left: 238px;
+  }
+
+  .page-header__nav--1::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    border-radius: 2px;
+    background: $accent-color;
+    display: none;
+    top: 76px;
+    width: 42px;
+    left: 453px;
+  }
+
+  .page-header__nav--2::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    border-radius: 2px;
+    background: $accent-color;
+    display: none;
+    top: 76px;
+    width: 66px;
+    left: 545px;
+  }
+
+  .page-header__nav--3::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    border-radius: 2px;
+    background: $accent-color;
+    display: none;
+    top: 76px;
+    width: 53px;
+    left: 660px;
+  }
+
+  .page-header__nav--1:hover::after,
+  .page-header__nav--2:hover::after,
+  .page-header__nav--3:hover::after,
+  .page-header__nav--1:focus::after,
+  .page-header__nav--2:focus::after,
+  .page-header__nav--3:focus::after {
+    display: inline;
+  }
+
+  .email-tel {
+    display: flex;
+    gap: 40px;
+    padding-left: 339px;
+  }
+
+  .email-tel__contacts {
+    padding-left: 10px;
+    font-family: var(--text-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    &:hover {
+      color: #2196f3;
+      cursor: pointer;
+    }
+  }
+
+  .email-tel__icon {
+    width: 16px;
+    height: 16px;
+    color: currentColor;
+  }
+
+  .email-tel__email,
+  .email-tel__tel {
+    display: flex;
+    align-items: center;
+    color: #757575;
+    &:hover {
+      color: #2196f3;
+      cursor: pointer;
+    }
+  }
+}

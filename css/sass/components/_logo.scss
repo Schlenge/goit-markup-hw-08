@@ -1,0 +1,39 @@
+.logo {
+  width: 154px;
+  height: 28px;
+  &__text {
+    font-family: var(--logo-font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: $accent-color;
+  }
+  &--dark {
+    color: #000;
+  }
+  &--white {
+    color: #fff;
+  }
+}
+
+@media screen and (min-width: $mobile-breakpoint) and (max-width: 1199px) {
+  .logo {
+    height: 28px;
+    width: 134px;
+    left: 15px;
+    top: 26px;
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .logo {
+    height: 31px;
+    width: 145px;
+    &__text {
+      font-size: 26px;
+      line-height: 31px;
+    }
+  }
+}

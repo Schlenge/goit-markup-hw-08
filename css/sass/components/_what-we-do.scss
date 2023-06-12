@@ -1,0 +1,40 @@
+.what-we-do {
+  display: none;
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .what-we-do {
+    position: absolute;
+    width: 1170px;
+    height: 386px;
+    top: 1119px;
+    display: flex;
+    margin-bottom: 94px;
+    padding: 0;
+  }
+  .we-do {
+    margin-left: 215px;
+    &__img {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    &__service {
+      position: absolute;
+      width: 370px;
+      height: 70px;
+      font-family: var(--text-font-family);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: #ffffff;
+      padding-top: 27px;
+      background: rgba(47, 48, 58, 0.8);
+      top: 224px;
+    }
+  }
+}

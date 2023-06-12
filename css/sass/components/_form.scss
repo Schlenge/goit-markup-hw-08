@@ -1,0 +1,145 @@
+@use "../utils/variables";
+
+.form__title {
+  position: relative;
+  width: 370px;
+  height: 46px;
+  left: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $dark;
+  padding-top: 2px;
+  }
+  .form__block {
+    position: relative;
+    width: 448px;
+    height: 342px;
+    padding: 26px 40px 0 26px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__field {
+    position: relative;
+    &:hover {
+      fill: $accent-color;
+      cursor: pointer;
+    }
+    &:focus {
+      fill: $accent-color;
+      cursor: pointer;
+    }
+  }
+
+  .form__label {
+    color: $light;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .form__input {
+    width: 370px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    &:hover {
+      cursor: pointer;
+      border: 1px solid $accent-color;
+    }
+    &:focus {
+      cursor: pointer;
+      border: 1px solid $accent-color;
+    }
+  }
+
+  .form__textarea {
+    width: 370px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 4px;
+    resize: none;
+    &::placeholder {
+      color: rgba(117, 117, 117, 0.5);
+    }
+    &:hover {
+      border: 1px solid $accent-color;
+      cursor: pointer;
+    }
+  }
+  .form__svg {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 3%;
+  }
+  .form__agree-terms {
+    position: relative;
+    width: 360px;
+    height: 15px;
+    left: 52px;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 55px;
+    padding-bottom: 35px;
+    &--text {
+      padding-left: 8px;
+      font-family: var(--text-font-family);
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.03em;
+      color: $light;
+    }
+  }
+  
+.checked {
+  width: 16px;
+  height: 15px;
+  position: relative;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.form__agree-terms--link {
+  color: $accent-color;
+  text-decoration: underline;
+}
+
+.form__btn-submit {
+  margin-left: 125px;
+}
+@media screen and (min-width: $tablet-breakpoint){
+
+}
+@media screen and (min-width: $desktop-breakpoint){
+  .form__title{
+    width: 448px;
+    height: 23px;
+  }
+  .form__block {
+ padding-left: 40px;
+ 
+   }
+  .form__input {
+    width: 448px;
+  }
+  .form__textarea {
+    width: 448px;
+    }    
+.form__btn-submit {
+  margin-left: 164px;
+}
+}

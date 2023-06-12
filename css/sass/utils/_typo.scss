@@ -1,0 +1,57 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--text-font-family);
+  color: #212121;
+}
+
+.h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.h4 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+.h5 {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.section__title {
+  font-family: var(--text-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $dark;
+  position: relative;
+  padding-bottom: 30px;
+  margin: auto;
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .section__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}

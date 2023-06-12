@@ -1,0 +1,127 @@
+.team {
+  width: 480px;
+  height: 2761px;
+  left: 0px;
+  background: #f5f4fa;
+  &__people {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 15px;
+  }
+}
+
+.team__card {
+  background: #fff;
+  width: 450px;
+  height: 622px;
+  margin-left: 15px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__people-name {
+  font-family: var(--text-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  background-color: #fff;
+  color: $dark;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  margin: 0%;
+}
+
+.team__people-job {
+  font-family: var(--text-font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  background-color: #fff;
+  color: $light;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+}
+
+.team__sm-icons {
+  height: 44px;
+  display: flex;
+  gap: 10px;
+}
+
+.team__sm-icons--item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #ffffff;
+  color: $light;
+  &:hover {
+    background: $accent-color;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: var(--transition);
+  }
+}
+
+.team__sm-icons--icon {
+  width: 20px;
+  height: 20px;
+  color: $light;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) and (max-width: 1199px){
+  .team {
+    width: 768px;
+    &__people {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 50%;
+      gap: 30px;
+      margin-left: 15px;
+    }
+  }
+  .team__card {
+    width: 354px;
+    height: 536px;
+  }
+}
+@media screen and (min-width: $desktop-breakpoint) {
+  .team {
+    position: absolute;
+    width: 1600px;
+    height: 708px;
+    top: 1599px;
+  }
+
+  .team__card {
+    width: 270px;
+    height: 428px;
+  }
+
+  .team__people {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 215px;
+  }
+
+  .team__sm-icons {
+    padding-left: 32px;
+  }
+}
